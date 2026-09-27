@@ -1,0 +1,6 @@
+scheme_key,scheme_name,category,source_url,source_type,last_updated,chunk_count,sections,snapshot_path
+large_cap,HDFC Large Cap Fund Direct Growth,Large Cap,https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth,snapshot,2026-09-27,8,"download(1), fees(6), riskometer(1)",data/raw/text/large_cap.txt
+flexi_cap,HDFC Flexi Cap Direct Plan Growth,Flexi Cap,https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth,snapshot,2026-09-27,8,"download(1), fees(6), riskometer(1)",data/raw/text/flexi_cap.txt
+elss,HDFC ELSS Tax Saver Fund Direct Plan Growth,ELSS,https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth,snapshot,2026-09-27,7,"download(2), fees(3), lock_in(1), riskometer(1)",data/raw/text/elss.txt
+small_cap,HDFC Small Cap Fund Direct Growth,Small Cap,https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth,snapshot,2026-09-27,8,"download(1), fees(6), riskometer(1)",data/raw/text/small_cap.txt
+balanced_advantage,HDFC Balanced Advantage Fund Direct Growth,Balanced Advantage (Hybrid),https://groww.in/mutual-funds/hdfc-balanced-advantage-fund-direct-growth,snapshot,2026-09-27,8,"download(1), fees(6), riskometer(1)",data/raw/text/balanced_advantage.txt

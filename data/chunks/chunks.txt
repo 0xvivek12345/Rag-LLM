@@ -1,0 +1,117 @@
+[large_cap_000] scheme=HDFC Large Cap Fund Direct Growth | section=riskometer | 347 chars
+HDFC Large Cap Fund Direct Growth is an Equity Mutual Fund Scheme in the Large Cap category, launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Rahul Baijal is the current fund manager of HDFC Large Cap Fund Direct Growth, managing the fund since Jul 2022. The fund is rated Very High risk on the riskometer.
+
+[large_cap_001] scheme=HDFC Large Cap Fund Direct Growth | section=fees | 374 chars
+The fund is rated Very High risk on the riskometer. Investment Objective: The scheme seeks to provide long-term capital appreciation/income by investing predominantly in Large-Cap companies. Fund benchmark: NIFTY 100 Total Return Index. Fund size (AUM): Rs 39,933.37 Cr. Latest NAV as of 25 Sep 2026 is Rs 1,189.08. Expense ratio of HDFC Large Cap Fund Direct Growth: 1.03%.
+
+[large_cap_002] scheme=HDFC Large Cap Fund Direct Growth | section=fees | 337 chars
+Expense ratio of HDFC Large Cap Fund Direct Growth: 1.03%. Exit load: Exit load of 1% if redeemed within 1 year. Minimum investments: Minimum for 1st investment is Rs 100. Minimum for 2nd investment is Rs 100. Minimum SIP investment is Rs 100. Minimum lumpsum investment is Rs 100. Stamp duty on investment: 0.005% (from July 1st, 2020).
+
+[large_cap_003] scheme=HDFC Large Cap Fund Direct Growth | section=fees | 336 chars
+Stamp duty on investment: 0.005% (from July 1st, 2020). Tax implication: If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%. Expense ratio definition: A fee payable to a mutual fund house for managing your mutual fund investments.
+
+[large_cap_004] scheme=HDFC Large Cap Fund Direct Growth | section=fees | 229 chars
+Expense ratio definition: A fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses.
+
+[large_cap_005] scheme=HDFC Large Cap Fund Direct Growth | section=fees | 295 chars
+It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses. Exit load definition: A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment.
+
+[large_cap_006] scheme=HDFC Large Cap Fund Direct Growth | section=fees | 362 chars
+Exit load definition: A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment. The registrar and transfer agent (RTA) for HDFC Mutual Fund is Cams; statements and tax documents such as capital gains statements can be downloaded from the CAMS website www.camsonline.com.
+
+[large_cap_007] scheme=HDFC Large Cap Fund Direct Growth | section=download | 287 chars
+The registrar and transfer agent (RTA) for HDFC Mutual Fund is Cams; statements and tax documents such as capital gains statements can be downloaded from the CAMS website www.camsonline.com. The Scheme Information Document (SID) for HDFC schemes is available at https://www.hdfcfund.com.
+
+[flexi_cap_000] scheme=HDFC Flexi Cap Direct Plan Growth | section=riskometer | 348 chars
+HDFC Flexi Cap Direct Plan Growth is an Equity Mutual Fund Scheme in the Flexi Cap category, launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Dhruv Muchhal is the current fund manager of HDFC Flexi Cap Direct Plan Growth, managing the fund since Jun 2023. The fund is rated Very High risk on the riskometer.
+
+[flexi_cap_001] scheme=HDFC Flexi Cap Direct Plan Growth | section=fees | 399 chars
+The fund is rated Very High risk on the riskometer. Investment Objective: The scheme seeks to generate capital appreciation / income from a portfolio, predominantly invested in equity & equity related instruments. Fund benchmark: NIFTY 500 Total Return Index. Fund size (AUM): Rs 1,13,606.47 Cr. Latest NAV as of 25 Sep 2026 is Rs 2,214.57. Expense ratio of HDFC Flexi Cap Direct Plan Growth: 0.77%.
+
+[flexi_cap_002] scheme=HDFC Flexi Cap Direct Plan Growth | section=fees | 337 chars
+Expense ratio of HDFC Flexi Cap Direct Plan Growth: 0.77%. Exit load: Exit load of 1% if redeemed within 1 year. Minimum investments: Minimum for 1st investment is Rs 100. Minimum for 2nd investment is Rs 100. Minimum SIP investment is Rs 100. Minimum lumpsum investment is Rs 100. Stamp duty on investment: 0.005% (from July 1st, 2020).
+
+[flexi_cap_003] scheme=HDFC Flexi Cap Direct Plan Growth | section=fees | 336 chars
+Stamp duty on investment: 0.005% (from July 1st, 2020). Tax implication: If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%. Expense ratio definition: A fee payable to a mutual fund house for managing your mutual fund investments.
+
+[flexi_cap_004] scheme=HDFC Flexi Cap Direct Plan Growth | section=fees | 229 chars
+Expense ratio definition: A fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses.
+
+[flexi_cap_005] scheme=HDFC Flexi Cap Direct Plan Growth | section=fees | 295 chars
+It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses. Exit load definition: A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment.
+
+[flexi_cap_006] scheme=HDFC Flexi Cap Direct Plan Growth | section=fees | 362 chars
+Exit load definition: A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment. The registrar and transfer agent (RTA) for HDFC Mutual Fund is Cams; statements and tax documents such as capital gains statements can be downloaded from the CAMS website www.camsonline.com.
+
+[flexi_cap_007] scheme=HDFC Flexi Cap Direct Plan Growth | section=download | 287 chars
+The registrar and transfer agent (RTA) for HDFC Mutual Fund is Cams; statements and tax documents such as capital gains statements can be downloaded from the CAMS website www.camsonline.com. The Scheme Information Document (SID) for HDFC schemes is available at https://www.hdfcfund.com.
+
+[elss_000] scheme=HDFC ELSS Tax Saver Fund Direct Plan Growth | section=lock_in | 389 chars
+HDFC ELSS Tax Saver Fund Direct Plan Growth is an Equity Mutual Fund Scheme in the ELSS category with a 3-year lock-in, launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Amar Kalkundrikar is the current fund manager of HDFC ELSS Tax Saver Fund Direct Plan Growth, managing the fund since Dec 2025. The fund is rated Very High risk on the riskometer.
+
+[elss_001] scheme=HDFC ELSS Tax Saver Fund Direct Plan Growth | section=riskometer | 340 chars
+The fund is rated Very High risk on the riskometer. Investment Objective: The scheme seeks to generate capital appreciation / income from a portfolio, comprising predominantly of equity & equity related instruments. Fund benchmark: NIFTY 500 Total Return Index. Fund size (AUM): Rs 15,991.78 Cr. Latest NAV as of 25 Sep 2026 is Rs 1,447.38.
+
+[elss_002] scheme=HDFC ELSS Tax Saver Fund Direct Plan Growth | section=fees | 369 chars
+Latest NAV as of 25 Sep 2026 is Rs 1,447.38. Expense ratio of HDFC ELSS Tax Saver Fund Direct Plan Growth: 1.21%. Lock-in: As an ELSS scheme, this fund has a lock-in period of 3 years. Exit load: Nil. Minimum investments: Minimum for 1st investment is Rs 500. Minimum for 2nd investment is Rs 500. Minimum SIP investment is Rs 500. Minimum lumpsum investment is Rs 500.
+
+[elss_003] scheme=HDFC ELSS Tax Saver Fund Direct Plan Growth | section=fees | 374 chars
+Minimum lumpsum investment is Rs 500. Stamp duty on investment: 0.005% (from July 1st, 2020). Tax implication: If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%. Expense ratio definition: A fee payable to a mutual fund house for managing your mutual fund investments.
+
+[elss_004] scheme=HDFC ELSS Tax Saver Fund Direct Plan Growth | section=fees | 229 chars
+Expense ratio definition: A fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses.
+
+[elss_005] scheme=HDFC ELSS Tax Saver Fund Direct Plan Growth | section=download | 314 chars
+It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses. The registrar and transfer agent (RTA) for HDFC Mutual Fund is Cams; statements and tax documents such as capital gains statements can be downloaded from the CAMS website www.camsonline.com.
+
+[elss_006] scheme=HDFC ELSS Tax Saver Fund Direct Plan Growth | section=download | 287 chars
+The registrar and transfer agent (RTA) for HDFC Mutual Fund is Cams; statements and tax documents such as capital gains statements can be downloaded from the CAMS website www.camsonline.com. The Scheme Information Document (SID) for HDFC schemes is available at https://www.hdfcfund.com.
+
+[small_cap_000] scheme=HDFC Small Cap Fund Direct Growth | section=riskometer | 350 chars
+HDFC Small Cap Fund Direct Growth is an Equity Mutual Fund Scheme in the Small Cap category, launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Chirag Setalvad is the current fund manager of HDFC Small Cap Fund Direct Growth, managing the fund since Jun 2014. The fund is rated Very High risk on the riskometer.
+
+[small_cap_001] scheme=HDFC Small Cap Fund Direct Growth | section=fees | 381 chars
+The fund is rated Very High risk on the riskometer. Investment Objective: The scheme seeks to provide long-term capital appreciation / income by investing predominantly in Small-Cap companies. Fund benchmark: BSE 250 SmallCap Total Return Index. Fund size (AUM): Rs 41,890.86 Cr. Latest NAV as of 25 Sep 2026 is Rs 159.82. Expense ratio of HDFC Small Cap Fund Direct Growth: 0.78%.
+
+[small_cap_002] scheme=HDFC Small Cap Fund Direct Growth | section=fees | 337 chars
+Expense ratio of HDFC Small Cap Fund Direct Growth: 0.78%. Exit load: Exit load of 1% if redeemed within 1 year. Minimum investments: Minimum for 1st investment is Rs 100. Minimum for 2nd investment is Rs 100. Minimum SIP investment is Rs 100. Minimum lumpsum investment is Rs 100. Stamp duty on investment: 0.005% (from July 1st, 2020).
+
+[small_cap_003] scheme=HDFC Small Cap Fund Direct Growth | section=fees | 336 chars
+Stamp duty on investment: 0.005% (from July 1st, 2020). Tax implication: If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%. Expense ratio definition: A fee payable to a mutual fund house for managing your mutual fund investments.
+
+[small_cap_004] scheme=HDFC Small Cap Fund Direct Growth | section=fees | 229 chars
+Expense ratio definition: A fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses.
+
+[small_cap_005] scheme=HDFC Small Cap Fund Direct Growth | section=fees | 295 chars
+It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses. Exit load definition: A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment.
+
+[small_cap_006] scheme=HDFC Small Cap Fund Direct Growth | section=fees | 362 chars
+Exit load definition: A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment. The registrar and transfer agent (RTA) for HDFC Mutual Fund is Cams; statements and tax documents such as capital gains statements can be downloaded from the CAMS website www.camsonline.com.
+
+[small_cap_007] scheme=HDFC Small Cap Fund Direct Growth | section=download | 287 chars
+The registrar and transfer agent (RTA) for HDFC Mutual Fund is Cams; statements and tax documents such as capital gains statements can be downloaded from the CAMS website www.camsonline.com. The Scheme Information Document (SID) for HDFC schemes is available at https://www.hdfcfund.com.
+
+[balanced_advantage_000] scheme=HDFC Balanced Advantage Fund Direct Growth | section=riskometer | 345 chars
+HDFC Balanced Advantage Fund Direct Growth is a Hybrid Mutual Fund Scheme in the Dynamic Asset Allocation category, launched by HDFC Mutual Fund. This scheme was made available to investors on 10 Dec 1999. Anil Bamboli is the current fund manager of HDFC Balanced Advantage Fund Direct Growth. The fund is rated Very High risk on the riskometer.
+
+[balanced_advantage_001] scheme=HDFC Balanced Advantage Fund Direct Growth | section=fees | 399 chars
+The fund is rated Very High risk on the riskometer. Investment Objective: The Scheme seeks to provide long term capital appreciation / income from a dynamic mix of equity and debt investments. Fund benchmark: NIFTY 50 Hybrid Composite Debt 50:50 Index. Fund size (AUM): Rs 1,07,295.79 Cr. Latest NAV as of 25 Sep 2026 is Rs 557.73. Expense ratio of HDFC Balanced Advantage Fund Direct Growth: 0.78%.
+
+[balanced_advantage_002] scheme=HDFC Balanced Advantage Fund Direct Growth | section=fees | 398 chars
+Expense ratio of HDFC Balanced Advantage Fund Direct Growth: 0.78%. Exit load: For units in excess of 15% of the investment, 1% will be charged for redemption within 1 year. Minimum investments: Minimum for 1st investment is Rs 100. Minimum for 2nd investment is Rs 100. Minimum SIP investment is Rs 100. Minimum lumpsum investment is Rs 100. Stamp duty on investment: 0.005% (from July 1st, 2020).
+
+[balanced_advantage_003] scheme=HDFC Balanced Advantage Fund Direct Growth | section=fees | 336 chars
+Stamp duty on investment: 0.005% (from July 1st, 2020). Tax implication: If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%. Expense ratio definition: A fee payable to a mutual fund house for managing your mutual fund investments.
+
+[balanced_advantage_004] scheme=HDFC Balanced Advantage Fund Direct Growth | section=fees | 229 chars
+Expense ratio definition: A fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses.
+
+[balanced_advantage_005] scheme=HDFC Balanced Advantage Fund Direct Growth | section=fees | 295 chars
+It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses. Exit load definition: A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment.
+
+[balanced_advantage_006] scheme=HDFC Balanced Advantage Fund Direct Growth | section=fees | 362 chars
+Exit load definition: A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment. The registrar and transfer agent (RTA) for HDFC Mutual Fund is Cams; statements and tax documents such as capital gains statements can be downloaded from the CAMS website www.camsonline.com.
+
+[balanced_advantage_007] scheme=HDFC Balanced Advantage Fund Direct Growth | section=download | 287 chars
+The registrar and transfer agent (RTA) for HDFC Mutual Fund is Cams; statements and tax documents such as capital gains statements can be downloaded from the CAMS website www.camsonline.com. The Scheme Information Document (SID) for HDFC schemes is available at https://www.hdfcfund.com.
+
