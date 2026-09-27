@@ -8,7 +8,7 @@ CHUNKS_DIR = DATA_DIR / "chunks"
 CHROMA_DIR = DATA_DIR / "chroma"
 
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-CHROMA_COLLECTION = "mf_faq"
+CHROMA_COLLECTION = "mf_faq_onnx"
 TOP_K = 4
 ANSWER_MAX_SENTENCES = 3
 ANSWER_MAX_TOKENS = 400

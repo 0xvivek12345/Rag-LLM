@@ -1,4 +1,5 @@
 import sys
+import threading
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -7,11 +8,7 @@ import streamlit as st
 
 import config
 from src.answer_generator import generate_answer
-from src.embedder import Embedder
 from src.guardrails import check_query
-from src.index_bootstrap import ensure_index
-from src.retriever import Retriever
-from src.vector_store import VectorStore
 
 WELCOME = "Welcome to the HDFC Mutual Fund FAQ Assistant."
 EXAMPLES = [
@@ -23,7 +20,21 @@ EXAMPLES = [
 
 @st.cache_resource
 def load_retriever():
-    return Retriever(Embedder(), ensure_index(VectorStore(), log=st.sidebar.info))
+    from src.embedder import Embedder
+    from src.index_bootstrap import ensure_index
+    from src.retriever import Retriever
+    from src.vector_store import VectorStore
+
+    embedder = Embedder()
+    store = ensure_index(VectorStore(), log=lambda msg: None, embedder=embedder)
+    return Retriever(embedder, store)
+
+
+def _warmup_retriever():
+    try:
+        load_retriever()
+    except Exception:
+        pass
 
 
 def answer_query(query):
@@ -90,7 +101,7 @@ should_ask = bool(submitted and typed) or (st.session_state.get("auto_ask") and 
 
 if should_ask:
     st.session_state["auto_ask"] = False
-    with st.spinner("Retrieving from official sources (first query loads the embedding model, ~20s)..."):
+    with st.spinner("Retrieving from official sources (first query may take a few seconds)..."):
         entry = answer_query(typed)
     st.session_state.setdefault("history", []).insert(0, entry)
 
@@ -98,3 +109,7 @@ if st.session_state.get("history"):
     st.caption("Answers above · " + config.DISCLAIMER)
     for entry in st.session_state["history"]:
         render(entry)
+
+if not st.session_state.get("_retriever_warmup"):
+    st.session_state["_retriever_warmup"] = True
+    threading.Thread(target=_warmup_retriever, daemon=True).start()

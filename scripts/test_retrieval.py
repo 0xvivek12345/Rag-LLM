@@ -5,6 +5,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from src.embedder import Embedder
 from src.guardrails import check_query
+from src.index_bootstrap import ensure_index
 from src.retriever import Retriever
 from src.vector_store import VectorStore
 
@@ -26,7 +27,7 @@ GUARD_QUERIES = [
 
 def main():
     embedder = Embedder()
-    store = VectorStore()
+    store = ensure_index(VectorStore(), embedder=embedder)
     retriever = Retriever(embedder, store)
     print(f"Chroma count: {store.count()}\n")
 

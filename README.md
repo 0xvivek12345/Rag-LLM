@@ -59,23 +59,24 @@ streamlit run app.py                # Streamlit UI
 
 `data/chroma/` is not committed (build artifact). The first query rebuilds the index
 automatically from the committed page snapshots in `data/raw/text/` — that is why a
-fresh clone or a cloud deploy works with no build step, at the cost of one slow
-(~40s) first answer.
+fresh clone or a cloud deploy works with no build step.
 
-## 4. Deploy to the web (Streamlit Community Cloud, free)
+## 4. Deploy to the web
 
-1. Make the repo **public** (Community Cloud's free tier deploys from public repos).
-2. Go to <https://share.streamlit.io> → **Deploy** → *Deploy from GitHub*.
-3. Authorize the Streamlit GitHub app and pick `0xvivek12345/Rag-LLM`, branch `main`,
-   main file `app.py`.
-4. Optional, for fluent LLM answers: **Settings → Secrets** → add
-   `GROQ_API_KEY = "gsk_..."`. Without it the app answers extractively and still works.
-5. Click **Deploy**. First boot installs the dependencies and builds the index, so
-   expect 3–6 minutes before the first question can be asked.
+**Why the public URL can feel slow:** a Render free web service sleeps after ~15 minutes
+idle. The next visitor waits for a cold start (allocate VM + start Streamlit) before
+the page appears. After the instance is up, the UI loads first; the embedding model
+warms in the background.
 
-Render is not a good fit here: its free web service has 512 MB RAM and sleeps after
-15 minutes of inactivity, which is not enough headroom for `sentence-transformers`
-+ `chromadb` and would make the demo unreliable.
+To keep [the Render demo](https://rag-llm-28lt.onrender.com/) from sleeping, this repo
+includes `.github/workflows/keep-render-awake.yml` (pings `/_stcore/health` every 12
+minutes). Enable GitHub Actions on the repo after you push. A paid Render instance, or
+Streamlit Community Cloud, also avoids that sleep.
+
+1. On Render: Python web service, start command
+   `streamlit run app.py --server.port $PORT --server.address 0.0.0.0`.
+2. Optional: set `GROQ_API_KEY` in the host's environment / secrets.
+3. After a fresh deploy, the first instance still downloads the MiniLM ONNX model once.
 
 ## 5. Verify the demo
 
@@ -102,7 +103,7 @@ regression tests.
 | Small Cap | HDFC Small Cap Fund Direct Growth |
 | Balanced Advantage (Hybrid) | HDFC Balanced Advantage Fund Direct Growth |
 
-Pipeline: Loading → Chunking → Embedding (`all-MiniLM-L6-v2`, 384-dim) → ChromaDB
+Pipeline: Loading → Chunking → Embedding (`all-MiniLM-L6-v2` via fastembed/ONNX, 384-dim) → ChromaDB
 (persistent, cosine) → Retrieval (top-4) → Guardrails → Answer generation (≤3 sentences
 + 1 citation). Stage-to-module mapping is in `doc/architecture.md` §4.
 

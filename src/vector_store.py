@@ -1,5 +1,3 @@
-import chromadb
-
 import config
 
 META_FIELDS = (
@@ -16,6 +14,8 @@ META_FIELDS = (
 
 class VectorStore:
     def __init__(self, persist_dir=config.CHROMA_DIR, collection_name=config.CHROMA_COLLECTION):
+        import chromadb
+
         self.client = chromadb.PersistentClient(path=str(persist_dir))
         self.collection = self._get_collection(collection_name)
 

@@ -1,19 +1,17 @@
 import config
-from sentence_transformers import SentenceTransformer
 
 
 class Embedder:
+    """ONNX MiniLM via fastembed — no PyTorch, so the UI can boot on small hosts."""
+
     def __init__(self, model_name=config.EMBEDDING_MODEL):
-        self.model = SentenceTransformer(model_name)
+        from fastembed import TextEmbedding
+
+        self.model = TextEmbedding(model_name=model_name)
 
     def encode(self, texts, batch_size=32):
-        embeddings = self.model.encode(
-            list(texts),
-            batch_size=batch_size,
-            normalize_embeddings=True,
-            show_progress_bar=False,
-        )
-        return [e.tolist() for e in embeddings]
+        vectors = self.model.embed(list(texts), batch_size=batch_size)
+        return [list(map(float, e)) for e in vectors]
 
     def encode_query(self, text):
         return self.encode([text])[0]
