@@ -96,3 +96,20 @@ _load_env()
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 GROQ_MODEL = "openai/gpt-oss-20b"
+
+
+def groq_api_key():
+    """Resolve the Groq key: environment/.env first, Streamlit secrets second.
+
+    Streamlit Cloud injects secrets through `st.secrets` instead of a .env file,
+    and that value is only readable after `set_page_config`, hence the lazy lookup.
+    """
+    key = os.environ.get("GROQ_API_KEY", "")
+    if key:
+        return key
+    try:
+        import streamlit as st
+
+        return str(st.secrets.get("GROQ_API_KEY", ""))
+    except Exception:
+        return ""

@@ -84,12 +84,13 @@ def generate_answer(query, hits):
     answer = None
     generator = "extractive"
     context = _build_context(hits)
+    api_key = config.groq_api_key()
 
-    if config.GROQ_API_KEY:
+    if api_key:
         try:
             from groq import Groq
 
-            client = Groq(api_key=config.GROQ_API_KEY)
+            client = Groq(api_key=api_key)
             completion = client.chat.completions.create(
                 model=config.GROQ_MODEL,
                 messages=[

@@ -57,18 +57,40 @@ python scripts/run_chat.py --demo   # fixed demo set incl. refusals
 streamlit run app.py                # Streamlit UI
 ```
 
-## 4. Verify the demo
+`data/chroma/` is not committed (build artifact). The first query rebuilds the index
+automatically from the committed page snapshots in `data/raw/text/` — that is why a
+fresh clone or a cloud deploy works with no build step, at the cost of one slow
+(~40s) first answer.
+
+## 4. Deploy to the web (Streamlit Community Cloud, free)
+
+1. Make the repo **public** (Community Cloud's free tier deploys from public repos).
+2. Go to <https://share.streamlit.io> → **Deploy** → *Deploy from GitHub*.
+3. Authorize the Streamlit GitHub app and pick `0xvivek12345/Rag-LLM`, branch `main`,
+   main file `app.py`.
+4. Optional, for fluent LLM answers: **Settings → Secrets** → add
+   `GROQ_API_KEY = "gsk_..."`. Without it the app answers extractively and still works.
+5. Click **Deploy**. First boot installs the dependencies and builds the index, so
+   expect 3–6 minutes before the first question can be asked.
+
+Render is not a good fit here: its free web service has 512 MB RAM and sleeps after
+15 minutes of inactivity, which is not enough headroom for `sentence-transformers`
++ `chromadb` and would make the demo unreliable.
+
+## 5. Verify the demo
 
 ```bash
 python scripts/test_retrieval.py    # 6 expected query types + 3 guardrail cases
 python scripts/run_evaluation.py    # PRD §10 checklist -> doc/evaluation_report.md
+python scripts/test_ui.py           # headless Streamlit UI smoke test
 python scripts/build_sample_qa.py   # regenerate doc/sample_qa.md / .csv
 python scripts/export_sources.py    # regenerate doc/sources.md / .csv
 ```
 
-`run_evaluation.py` exits non-zero if any check fails, so it doubles as a regression test.
+`run_evaluation.py` and `test_ui.py` exit non-zero on failure, so they double as
+regression tests.
 
-## 5. Scope
+## 6. Scope
 
 **AMC:** HDFC Mutual Fund only. **5 schemes** (see [`doc/sources.md`](doc/sources.md)):
 
@@ -84,7 +106,7 @@ Pipeline: Loading → Chunking → Embedding (`all-MiniLM-L6-v2`, 384-dim) → C
 (persistent, cosine) → Retrieval (top-4) → Guardrails → Answer generation (≤3 sentences
 + 1 citation). Stage-to-module mapping is in `doc/architecture.md` §4.
 
-## 6. Deliverables (PRD §9)
+## 7. Deliverables (PRD §9)
 
 | # | Deliverable | Where |
 |---|---|---|
@@ -95,7 +117,7 @@ Pipeline: Loading → Chunking → Embedding (`all-MiniLM-L6-v2`, 384-dim) → C
 | 5 | Disclaimer snippet | `config.DISCLAIMER` / `config.DISCLAIMER_LONG`, rendered by both UIs |
 | + | Evaluation report (PRD §10) | [`doc/evaluation_report.md`](doc/evaluation_report.md) |
 
-## 7. Disclaimer (as shown in the UI)
+## 8. Disclaimer (as shown in the UI)
 
 > **Facts-only. No investment advice.** This assistant answers factual questions using
 > only official public pages. It does not give investment, buy/sell, portfolio or tax
@@ -103,7 +125,7 @@ Pipeline: Loading → Chunking → Embedding (`all-MiniLM-L6-v2`, 384-dim) → C
 > please verify the details there before acting. Mutual fund investments are subject to
 > market risks; read all scheme related documents carefully.
 
-## 8. Known limits
+## 9. Known limits
 
 - One AMC, 5 schemes — nothing outside the corpus is answerable.
 - "Last updated" reflects ingestion time, not the live state of the page.
